@@ -2,9 +2,10 @@ import User from "@/components/User";
 import Image from "next/image";
 
 export default async function Home() {
-  const users = await fetch("http://127.0.0.1:8000/api/v1/users").then((res) =>
-    res.json()
-  );
+  // const users = await fetch("http://127.0.0.1:8000/api/v1/users").then((res) =>
+  //   res.json()
+  // );
+  const users = [{name:"A", age:33},{name:"A", age:33},{name:"A", age:33}]
 
   console.log(users);
 
